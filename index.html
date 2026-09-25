@@ -1,0 +1,180 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE-edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.1/css/all.min.css">
+    <script src="https://kit.fontawesome.com/YOUR_KIT_CODE.js" crossorigin="anonymous"></script>
+
+    <title>Personal Portfolio</title>
+</head>
+<body>
+    <div id="header">
+        
+        <div class="container">
+
+            <nav>
+                <div class="logo">Nirob.</div>
+                <ul id="ulBar">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <i class="fas fa-times" onclick="closeTab()"></i>
+                </ul>
+                <i class="fas fa-bars" onclick="opeNTab()"></i>
+            </nav>
+            <div class="headerText">
+                <p>UI/UX Designer</p>
+                <h1>Hi, I'm <span>Nazmul <br>Hasan</span> From Dhaka</h1>
+            </div>
+        </div>
+
+    </div>
+    
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="aboutColumns1">
+                    <img src="images/about.png" alt="">
+                </div>
+                <div class="aboutColumns2">
+                    <h1>About Me</h1>
+                    <p>I'm an undergraduate of BSc in CSE at Southeast University of Tejgaon. I am pursuing my intern in ByteCapsule.
+                       I am a UI/UX designer as well as a app and web developer.
+                    </p>
+                    <div class="tab-titles">
+                        <p class="tab-links active_link" onclick="openTab('skills')">Skills</p>
+                        <p class="tab-links" onclick="openTab('education')">Education</p>
+                        <p class="tab-links" onclick="openTab('exp')">Experience</p>
+                    </div>
+                    <div class="tab_content active_tab" id="skills">
+                        <ul>
+                            <li><span>UI/UX</span><br>Designing Web/App interfaces</li>
+                            <li><span>Web Development</span><br>Web App Development</li>
+                            <li><span>App Development</span><br>Bulding Android/iOS Apps</li>
+                        </ul>
+                    </div>
+                    <div class="tab_content" id="education">
+                        <ul>
+                            <li><span>2022-2026</span><br>CSE undergraduate</li>
+                            <li><span>2020</span><br>Higher Secondary School</li>
+                            <li><span>2018</span><br>Secondary School</li>
+                        </ul>
+                    </div>
+                    <div class="tab_content" id="exp">
+                        <ul>
+                            <li><span>2022</span><br>Worked As the Junior IT Handler of Jotun Company</li>
+                            <li><span>2026</span><br>Working As the Developer of Green Birds Company ERP Software</li>
+                            <li><span>2022</span><br>Sub-In-charge of VAT in Jotun Paints</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="services">
+
+        <div class="container">
+            <h1 class="sub-title">My Services</h1>
+            <div class="servicesList">
+                <div>
+                    <i class="fas fa-code"></i>
+                    <h2>Web Designer</h2>
+                    <p>Web Development, API backend Integration <br> UI/UX Designer and Performance Optimization</p>
+                    <a href="#">Learn More</a>
+                </div>
+                <div>
+                    <i class="fas fa-crop-alt"></i>
+                    <h2>App Design</h2>
+                    <p>Designing App with java, javascript and python</p>
+                    <a href="#">Learn More</a>
+                </div>
+                <div>
+                    <i class="fa-brands fa-app-store"></i>
+                    <h2>UI/UX Design</h2>
+                    <p>Turning Desing mock ups,pixel perfect <br>accessible and interactive codes</p>
+                    <a href="#">Learn More</a>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <div id="portfolio">
+        <div class="container">
+            <h1 class="sub-title">My Works</h1>
+            <div class="workList">
+                <div class="work">
+                    <img src="images/work2.jpg" alt="" style="height:300px">
+                    <div class="layer">
+                        <h3>Social Media App</h3>
+                        <p>The app connects you to the talented people around you. You can Download it from Play Store</p>
+                        <a href="#"><i class="fa fa-external-link"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/work4.png" alt="" style="height:300px">
+                     <div class="layer">
+                        <h3>Business Management App</h3>
+                        <p>The app connects you to the talented people around you. You can Download it from Play Store</p>
+                        <a href="#"><i class="fa fa-external-link"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/work5.jpg" alt="" style="height:300px">
+                     <div class="layer">
+                        <h3>Store Management App</h3>
+                        <p>The app connects you to the talented people around you. You can Download it from Play Store</p>
+                        <a href="#"><i class="fa fa-external-link"></i></a>
+                    </div>
+                </div>
+            </div>
+            <a href="#" class="btn">See More</a>
+            
+            
+        </div>
+    </div>
+
+    <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact_left">
+                    <h1 class="sub-title">Contact Me</h1>
+                    <p><i class="fas fa-paper-plane"></i>nazmulnirob2002@gmail.com</p>
+                    <p><i  class="fas fa-phone-square-alt"></i>01920972225</p>
+                    <div class="social_icon">
+                        <a href="https://facebook.com"><i class="fa-brands fa-facebook"></i></a>
+                        <a href="https://twitter.com"><i class="fa-brands fa-twitter"></i></a>
+                        <a href="https://instagram.com"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="https://linkedin.com"><i class="fa-brands fa-linkedin"></i></a>
+                    </div>
+                    <a href="" class="btn btn_two">Download CV</a>
+                </div>
+                <div class="contact_right">
+                    <form name="googleSheets">
+                        <input type="text" name="Name" placeholder="Enter Your Name">
+                        <input type="email" name="Email" placeholder="Enter Your Email">
+                        <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                        <button type="submit" class="btn btn_two" style="width:25%">Submit</button>
+                    </form>
+                    <span id="message">Hellow</span>
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>Copyright Nirob <i class="fas fa-heart"></i> Made with by Nirob</p>
+        </div>
+    </div>
+
+
+    <script src="js/script.js"></script>
+
+    
+</body>
+</html>
